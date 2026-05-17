@@ -1,0 +1,11 @@
+theme: jekyll-theme-minimal
+title: Lomi — Legal
+description: Privacy Policy and Terms of Service for the Lomi dating app
+
+# Clean permalinks (no .html extension)
+permalink: /:title/
+
+# Exclude repo metadata from the built site
+exclude:
+  - README.md
+  - .gitignore
