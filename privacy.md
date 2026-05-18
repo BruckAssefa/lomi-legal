@@ -41,15 +41,15 @@ We collect the following categories of information:
 - Waves sent and received
 - Matches and unmatches
 - Messages sent in matched conversations
-- Stories you post (photos or text)
-- Reactions to others' stories
+- Moments you post (photos or text)
+- Reactions to others' moments
 - Reports you submit about others
 - Lemon and Golden Lemon balance and transactions
 
 ### Technical Data
 - Device type and operating system version
 - App version
-- Approximate session timing for the daily story cap and feed cap
+- Approximate session timing for the daily moment cap and feed cap
 
 ### Information We Do NOT Collect
 - We do not collect your precise GPS location.
@@ -62,10 +62,10 @@ We collect the following categories of information:
 
 We use your information to:
 
-- Operate the Lomi service (match you with potential dating partners, deliver messages, post stories)
+- Operate the Lomi service (match you with potential dating partners, deliver messages, post moments)
 - Authenticate you and keep your account secure
 - Process in-app purchases of Lemons and Golden Lemons (via RevenueCat and Apple)
-- Send push notifications about matches, messages, waves, tosses, and stories (you can disable these in iOS Settings)
+- Send push notifications about matches, messages, waves, tosses, and moments (you can disable these in iOS Settings)
 - Investigate reports of abuse and enforce our Terms of Service
 - Improve the app (aggregated, anonymized usage patterns)
 - Communicate with you about service updates or moderation actions
@@ -81,7 +81,7 @@ We use your information to:
 ## 4. Who Sees Your Information
 
 ### Other Users
-- Other users see your profile fields, photos, age, city, and stories you post (visibility settings apply — you can set stories to "matches only" vs "public").
+- Other users see your profile fields, photos, age, city, and moments you post (visibility settings apply — you can set moments to "matches only" vs "public").
 - Once matched, the other party can read messages you send them in chat.
 - Other users do not see your email, push token, or activity data (tosses sent, etc.) unless they are the other party in a match.
 
@@ -100,10 +100,10 @@ We may disclose information when required by law (subpoena, court order, etc.) o
 
 ## 5. Photo Storage and Use
 
-Your profile photos and story photos are stored in our private storage bucket. Access is restricted such that:
+Your profile photos and moment photos are stored in our private storage bucket. Access is restricted such that:
 
 - Profile photos are visible to other Lomi users in feeds and matches per normal visibility rules.
-- Story photos are visible only to the audience you choose ("matches only" or "public").
+- Moment photos are visible only to the audience you choose ("matches only" or "public").
 - Verification selfies are visible only to our moderation team for the purpose of confirming your account.
 
 Photos are **never** used for AI/ML training, advertising, or anything outside of operating the Lomi service.
@@ -119,7 +119,7 @@ After account deletion:
 - Profile data and photos: deleted within **30 days**.
 - Messages: deleted along with the matched conversation.
 - Activity records (anonymized): may be retained for up to 12 months for fraud prevention and aggregate analytics.
-- Stories: deleted on expiry (24 hours) or on account deletion, whichever comes first.
+- Moments: deleted on expiry (24 hours) or on account deletion, whichever comes first.
 
 We may retain certain information longer if required by law (e.g. for tax records on purchases) or to enforce these terms.
 
@@ -134,7 +134,7 @@ You have the right to:
 - **Delete** your account and data. Use the in-app account deletion option in Settings, or email lomiteam@outlook.com. We will complete deletion within 30 days.
 - **Export** your data (data portability). Email us and we'll provide a copy of your account data.
 - **Block** another user, which removes them from your feeds in both directions.
-- **Report** another user's profile or story content. Reports are reviewed by our moderation team.
+- **Report** another user's profile or moment content. Reports are reviewed by our moderation team.
 
 ---
 

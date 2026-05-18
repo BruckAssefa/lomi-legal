@@ -72,7 +72,7 @@ Violation of these terms may result in immediate account suspension or terminati
 
 ## 4. User-Generated Content
 
-You retain ownership of content you post on Lomi (photos, stories, messages, etc.).
+You retain ownership of content you post on Lomi (photos, moments, messages, etc.).
 
 By posting content, you grant Lomi a non-exclusive, royalty-free, worldwide license to host, store, display, and distribute that content **solely for the purpose of operating the Service**.
 
@@ -96,7 +96,7 @@ Lomi reserves the right to:
 
 We use both automated systems and human review to enforce these Terms.
 
-If your story or content is hidden or your account is suspended:
+If your moment or content is hidden or your account is suspended:
 
 - We will notify you in-app where reasonable.
 - You can email lomiteam@outlook.com to appeal.
@@ -105,7 +105,7 @@ Repeated violations may result in permanent account termination without refund.
 
 ### Reporting
 
-You can report another user's profile or story content using the in-app reporting tools. We review reports and take appropriate action, which may include hiding content, suspending the reported user's stories, or terminating their account.
+You can report another user's profile or moment content using the in-app reporting tools. We review reports and take appropriate action, which may include hiding content, suspending the reported user's moments, or terminating their account.
 
 ### Blocking
 
