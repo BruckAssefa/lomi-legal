@@ -181,6 +181,133 @@ We aim to respond within 7 business days.
 
 ---
 
+## 12. EU, UK, and Swiss Users — Your Rights Under GDPR
+
+If you are located in the European Economic Area (EEA), United Kingdom,
+or Switzerland, the General Data Protection Regulation (GDPR) and
+equivalent laws give you specific rights and protections. This section
+explains how those rights work in the context of Lomi.
+
+### Data controller
+
+The data controller is **Bruck Assefa** (Lomi), reachable at
+**lomiteam@outlook.com**. There is no separately appointed Data
+Protection Officer (DPO); at our current scale we are not required
+to appoint one. Direct any privacy questions to the email above.
+
+### Lawful basis for processing
+
+We rely on the following lawful bases under GDPR Article 6:
+
+- **Performance of a contract** — for everything strictly required to
+  operate the matching service (account creation, photo storage,
+  delivering messages, posting moments, matching algorithm).
+- **Your explicit consent** — for the special-category profile data
+  you choose to share (see below). This consent is given at signup
+  via a clear opt-in checkbox; you can withdraw it at any time by
+  deleting your account or by emailing us to request that we stop
+  processing those specific fields.
+- **Legitimate interests** — for safety, fraud prevention, and
+  content moderation. We've considered the impact on your rights
+  and concluded these uses are limited and necessary.
+
+### Special-category data (Article 9)
+
+Some information you choose to share on your Lomi profile may qualify
+as "special category" data under GDPR Article 9:
+
+- **Religion / faith** (the `Faith` field on your profile)
+- **Information that may reveal ethnicity or national origin** (country
+  of origin, cultural background, languages spoken)
+
+We process this data on the basis of your **explicit consent**, given
+at signup. Because you choose to share this on a public-by-design
+dating profile, the "manifestly made public by the data subject"
+exception in Article 9(2)(e) may also apply — but we prefer to rely
+on explicit consent for clarity.
+
+You can withdraw consent at any time. If you do, you can either
+clear those fields from your profile (Profile → Edit) or delete
+your account entirely.
+
+### International data transfer
+
+Your data is stored and processed in the **United States** by our
+infrastructure provider **Supabase** (a service of Supabase Inc.).
+This is a transfer outside the EEA / UK. The transfer is protected by
+Supabase's Standard Contractual Clauses (SCCs) with us as data
+processor. Supabase's data processing addendum is available at
+[supabase.com/dpa](https://supabase.com/dpa).
+
+Push notifications are delivered via **Expo's push service** and
+Apple's APNs / Google's FCM, which may involve additional transfers
+to the United States.
+
+Photo moderation analysis runs via **Amazon Web Services (AWS)
+Rekognition** in the United States.
+
+### Your rights
+
+Under GDPR you have the right to:
+
+- **Access** — request a copy of the personal data we hold about you
+- **Rectification** — correct inaccurate data (you can edit most of
+  this yourself via Profile → Edit; for anything else, email us)
+- **Erasure ("right to be forgotten")** — delete your account and
+  associated data (Profile → Delete Account; takes effect after a
+  30-day recovery window unless you cancel)
+- **Restriction** — limit how we use your data while a complaint is
+  resolved
+- **Data portability** — receive your data in a structured,
+  machine-readable format; email us with the subject "Data export
+  request" and we'll fulfill within 30 days
+- **Object** — object to processing based on legitimate interests
+- **Withdraw consent** — at any time, for processing based on
+  consent (this does not affect the lawfulness of past processing)
+- **Not be subject to automated decision-making** — we do not make
+  automated decisions with legal or similarly significant effects
+  about you. Matching is a recommendation only; no action is taken
+  without your choice.
+
+### How to exercise your rights
+
+Email **lomiteam@outlook.com** with the right you want to exercise.
+We will:
+- Acknowledge your request within 7 business days
+- Fulfill it within 30 days (or explain why we need more time, up
+  to 60 additional days for complex requests)
+- Verify your identity before fulfilling sensitive requests (to
+  protect you from impersonation)
+
+These services are provided free of charge unless requests are
+manifestly unfounded or excessive.
+
+### Right to lodge a complaint
+
+If you believe we have not handled your data properly, you have the
+right to lodge a complaint with your local data protection authority.
+You can find your authority via the European Data Protection Board:
+[edpb.europa.eu/about-edpb/about-edpb/members_en](https://edpb.europa.eu/about-edpb/about-edpb/members_en).
+
+UK residents can contact the Information Commissioner's Office:
+[ico.org.uk](https://ico.org.uk).
+
+We would appreciate the chance to address your concerns first —
+please email us before filing a formal complaint.
+
+### Data retention specifics for EU users
+
+- **Active accounts** — we retain your data for as long as your
+  account is active
+- **Deleted accounts** — soft-deleted for 30 days (recovery window),
+  then hard-deleted; backups expire within 90 days
+- **Messages** — retained for the lifetime of the match; deleted
+  when either party unmatches or deletes their account
+- **Moderation logs** — kept for 12 months for safety review
+- **Authentication logs** — kept for 90 days
+
+---
+
 *Lomi — Made with care for the Ethiopian and Eritrean diaspora.*
 
 [← Back to Legal home](/lomi-legal/)
