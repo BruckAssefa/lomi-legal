@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verifying — Fikir</title>
+  <link rel="stylesheet" href="/style.css" />
+  <!-- Apple Smart App Banner — surfaces an "Open in App" prompt at the
+       top of Safari when the user lands here on iOS. The Universal Link
+       on iOS should already trigger the app, but if the user opens this
+       URL from a non-iOS browser or the link expired, the banner gives
+       them a quick install path. -->
+  <meta name="apple-itunes-app" content="app-id=6763860304" />
+</head>
+<body>
+  <div class="container">
+    <header class="brand">
+      <div class="logo">🍋</div>
+      <a href="/" class="name">Fikir</a>
+    </header>
+
+    <h1 style="text-align: center; margin-top: 32px;">✅ Email verified</h1>
+    <p class="meta" style="text-align: center;">Tap below to finish signing in.</p>
+
+    <a id="open-app-btn" class="btn-hero" href="#">Open Fikir App →</a>
+
+    <p class="meta" style="text-align: center; margin-top: 8px;">
+      Don't have the app installed yet?
+    </p>
+    <div style="text-align: center;">
+      <a class="btn-secondary" href="https://apps.apple.com/app/id6763860304">Get on the App Store</a>
+    </div>
+
+    <hr />
+
+    <p style="text-align: center;">
+      Trouble signing in? Email <a href="mailto:team@fikirdating.app">team@fikirdating.app</a>.
+    </p>
+
+    <footer>
+      <div class="nav">
+        <a href="/">Home</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Forward the auth code / hash fragment to the app via the custom
+    // URL scheme. The full Universal Link (https://fikirdating.app/auth/callback...)
+    // should open the app directly on iOS — this fallback fires only if
+    // the user is on a platform/browser where the Universal Link didn't
+    // intercept (e.g. desktop, in-app webview, very old iOS).
+    (function () {
+      var btn = document.getElementById('open-app-btn');
+      var search = window.location.search || '';
+      var hash = window.location.hash || '';
+      // The mobile app handles both the PKCE `?code=...` style and the
+      // legacy implicit `#access_token=...` hash style. Pass whichever
+      // is present.
+      var appUrl = 'lomi://auth/callback' + search + hash;
+      btn.setAttribute('href', appUrl);
+
+      // Auto-attempt the deep link on load — most browsers will silently
+      // ignore if the app isn't installed. iOS Safari with the app
+      // installed will switch to the app. If nothing happens, the user
+      // can still tap the visible button.
+      try {
+        window.location.replace(appUrl);
+      } catch (e) {
+        // Silent — fallback button is already wired up.
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["2DPJK5MW7J.com.lomidating.lomi"],
+        "components": [
+          {
+            "/": "/auth/callback",
+            "comment": "Email verification deep link — iOS opens the Fikir app"
+          },
+          {
+            "/": "/auth/callback*",
+            "comment": "Email verification with PKCE code or hash fragment"
+          }
+        ]
+      }
+    ]
+  }
+}

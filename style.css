@@ -1,0 +1,223 @@
+/* Shared styles for fikirdating.app. Lightweight, no framework — keeps the site instant on first paint. */
+
+:root {
+  --primary: #B81D18;
+  --primary-dark: #970F0D;
+  --wine: #7A1018;
+  --pink-light: #FDE8E8;
+  --bg: #FAFAF7;
+  --surface: #FFFFFF;
+  --text: #111111;
+  --text-secondary: #6B7280;
+  --border: #EDE9E1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #D63751;
+    --primary-dark: #970F0D;
+    --wine: #FDE8E8;
+    --pink-light: #3D0E14;
+    --bg: #0F0D0B;
+    --surface: #1A1712;
+    --text: #F0EDE8;
+    --text-secondary: #A09890;
+    --border: #2A2520;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+header.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+header.brand .logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+header.brand .name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+p, li {
+  font-size: 16px;
+  color: var(--text);
+}
+
+ul, ol {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+.meta {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.callout {
+  background: var(--pink-light);
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+
+.callout p:last-child { margin-bottom: 0; }
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--primary);
+  color: white !important;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 16px;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background: var(--primary-dark);
+}
+
+/* Hero open-in-app button: oversized, centered, with a subtle pulse
+   so the user's eye lands on it the moment the page loads. Used on
+   the email verification landing page where speed-of-tap matters. */
+.btn-hero {
+  display: block;
+  margin: 24px auto;
+  padding: 22px 36px;
+  background: var(--primary);
+  color: white !important;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+  max-width: 360px;
+  box-shadow: 0 8px 24px rgba(184, 29, 24, 0.35);
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+.btn-hero:hover {
+  background: var(--primary-dark);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 8px 24px rgba(184, 29, 24, 0.35); }
+  50%      { transform: scale(1.03); box-shadow: 0 12px 32px rgba(184, 29, 24, 0.45); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-hero { animation: none; }
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--text-secondary) !important;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.btn-secondary:hover {
+  background: var(--surface);
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-align: center;
+}
+
+footer .nav { display: flex; justify-content: center; gap: 24px; margin-bottom: 12px; }
+footer .nav a { color: var(--text-secondary); }

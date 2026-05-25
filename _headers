@@ -1,0 +1,16 @@
+# Cloudflare Pages headers configuration.
+#
+# Apple App Site Association files must be served with
+# Content-Type: application/json AND no redirects.
+# Without these headers iOS rejects the file and Universal Links
+# silently stop working.
+
+/.well-known/apple-app-site-association
+  Content-Type: application/json
+  Cache-Control: public, max-age=3600
+
+# Strict security defaults for the rest of the site.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
