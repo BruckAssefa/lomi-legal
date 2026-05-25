@@ -1,0 +1,18 @@
+# Cloudflare Workers config for serving the fikirdating.app static site.
+#
+# Cloudflare merged Pages into Workers in 2025 — static-only sites are
+# now deployed as Workers with an [assets] block. No build step needed
+# for this site; everything's plain HTML/CSS.
+
+name = "lomi-legal"
+compatibility_date = "2025-01-01"
+
+[assets]
+# Serve everything in the repo root as static files.
+directory = "./"
+
+# /privacy → privacy.html, /terms → terms.html, etc.
+html_handling = "auto-trailing-slash"
+
+# Show the default Cloudflare 404 if a file isn't found.
+not_found_handling = "none"
