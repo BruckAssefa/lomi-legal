@@ -1,0 +1,21 @@
+# Tells Cloudflare Workers Static Assets which files to skip uploading.
+# Same syntax as .gitignore.
+#
+# CRITICAL: .git/ MUST be excluded — without this, anyone can browse
+# git history via lomi-legal.wond-bruck.workers.dev/.git/HEAD etc.
+.git/
+.wrangler/
+.gitignore
+.assetsignore
+
+# wrangler config + Jekyll config aren't needed at runtime.
+wrangler.toml
+_config.yml
+README.md
+
+# Legacy Jekyll Markdown — these are still served by GitHub Pages at
+# bruckassefa.github.io/lomi-legal for old TestFlight builds. Cloudflare
+# serves the HTML versions of /privacy and /terms via html_handling, so
+# the .md copies here would just be dead weight (and confusing if
+# someone hit fikirdating.app/privacy.md).
+*.md
