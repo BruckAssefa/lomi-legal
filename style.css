@@ -221,3 +221,17 @@ footer {
 
 footer .nav { display: flex; justify-content: center; gap: 24px; margin-bottom: 12px; }
 footer .nav a { color: var(--text-secondary); }
+
+.byline {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.copyright {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-top: 8px;
+  opacity: 0.8;
+}
